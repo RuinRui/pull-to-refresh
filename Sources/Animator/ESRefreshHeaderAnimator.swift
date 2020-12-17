@@ -29,14 +29,14 @@ import QuartzCore
 import UIKit
 
 open class ESRefreshHeaderAnimator: UIView, ESRefreshProtocol, ESRefreshAnimatorProtocol, ESRefreshImpactProtocol {
-    open var pullToRefreshDescription = NSLocalizedString("Pull to refresh", comment: "") {
+    open var pullToRefreshDescription = NSLocalizedString("Previous Chapter", comment: "") {
         didSet {
             if pullToRefreshDescription != oldValue {
                 titleLabel.text = pullToRefreshDescription;
             }
         }
     }
-    open var releaseToRefreshDescription = NSLocalizedString("Release to refresh", comment: "")
+    open var releaseToRefreshDescription = NSLocalizedString("Release to load Previous Chapter", comment: "")
     open var loadingDescription = NSLocalizedString("Loading...", comment: "")
 
     open var view: UIView { return self }
